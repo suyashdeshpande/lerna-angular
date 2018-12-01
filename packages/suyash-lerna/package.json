@@ -1,0 +1,21 @@
+{
+  "name": "suyash-lerna",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  },
+  "main": "bundles/suyash-lerna.umd.js",
+  "module": "fesm5/suyash-lerna.js",
+  "es2015": "fesm2015/suyash-lerna.js",
+  "esm5": "esm5/suyash-lerna.js",
+  "esm2015": "esm2015/suyash-lerna.js",
+  "fesm5": "fesm5/suyash-lerna.js",
+  "fesm2015": "fesm2015/suyash-lerna.js",
+  "typings": "suyash-lerna.d.ts",
+  "metadata": "suyash-lerna.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

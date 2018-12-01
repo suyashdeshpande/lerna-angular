@@ -30,6 +30,18 @@
       ],
       "common-registration/*": [
         "dist/common-registration/*"
+      ],
+      "@suaysh/lerna-try": [
+        "dist/suaysh/lerna-try"
+      ],
+      "@suaysh/lerna-try/*": [
+        "dist/suaysh/lerna-try/*"
+      ],
+      "suyash-lerna": [
+        "dist/suyash-lerna"
+      ],
+      "suyash-lerna/*": [
+        "dist/suyash-lerna/*"
       ]
     }
   }

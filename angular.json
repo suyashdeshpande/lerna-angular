@@ -203,6 +203,76 @@
           }
         }
       }
+    },
+    "@suaysh/lerna-try": {
+      "root": "projects/suaysh/lerna-try",
+      "sourceRoot": "projects/suaysh/lerna-try/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/suaysh/lerna-try/tsconfig.lib.json",
+            "project": "projects/suaysh/lerna-try/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/suaysh/lerna-try/src/test.ts",
+            "tsConfig": "projects/suaysh/lerna-try/tsconfig.spec.json",
+            "karmaConfig": "projects/suaysh/lerna-try/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/suaysh/lerna-try/tsconfig.lib.json",
+              "projects/suaysh/lerna-try/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "suyash-lerna": {
+      "root": "projects/suyash-lerna",
+      "sourceRoot": "projects/suyash-lerna/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/suyash-lerna/tsconfig.lib.json",
+            "project": "projects/suyash-lerna/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/suyash-lerna/src/test.ts",
+            "tsConfig": "projects/suyash-lerna/tsconfig.spec.json",
+            "karmaConfig": "projects/suyash-lerna/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/suyash-lerna/tsconfig.lib.json",
+              "projects/suyash-lerna/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-project"
